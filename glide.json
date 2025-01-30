@@ -1,9 +1,8 @@
-
 [
   {
     "kind": "column",
-    "name": "OpenAI (Assistants)",
-    "description": "Create, modify and run OpenAI Assistants.",
+    "name": "Modify OpenAI Assistant",
+    "description": "Modify an existing assistant in OpenAI's API.",
     "author": "Gavin Horne <gavin@thinknetwork.com.au>",
     "params": [
       {
@@ -12,18 +11,58 @@
         "type": "string"
       },
       {
-        "name": "endpoint",
-        "displayName": "API Endpoint (Required)",
+        "name": "assistant_id",
+        "displayName": "Assistant ID (Required)",
         "type": "string"
       },
       {
-        "name": "body",
-        "displayName": "Body (JSON Schema Required)",
+        "name": "name",
+        "displayName": "Assistant Name",
         "type": "string"
       },
       {
-        "name": "json",
-        "displayName": "JSON Schema (Output)",
+        "name": "description",
+        "displayName": "Description",
+        "type": "string"
+      },
+      {
+        "name": "instructions",
+        "displayName": "Instructions (Required)",
+        "type": "string"
+      },
+      {
+        "name": "model",
+        "displayName": "Model (Required)",
+        "type": "string"
+      },
+      {
+        "name": "tools",
+        "displayName": "Tools (comma separated)",
+        "type": "string"
+      },
+      {
+        "name": "tool_resources",
+        "displayName": "Tool Resources (JSON format)",
+        "type": "string"
+      },
+      {
+        "name": "temperature",
+        "displayName": "Temperature",
+        "type": "number"
+      },
+      {
+        "name": "top_p",
+        "displayName": "Top P",
+        "type": "number"
+      },
+      {
+        "name": "metadata",
+        "displayName": "Metadata (JSON format)",
+        "type": "string"
+      },
+      {
+        "name": "response_format",
+        "displayName": "Response Format",
         "type": "string"
       }
     ],
